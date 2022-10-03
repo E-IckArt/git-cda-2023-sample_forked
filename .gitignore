@@ -1,0 +1,8 @@
+# JetBrains folders
+.idea/
+
+# Vs Code Folders
+.vscode/*
+
+# Local history for VsCode
+.history
