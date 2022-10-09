@@ -7,10 +7,14 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Site web simple</title>
-        <meta name="description" content="" />
+        <title>Campus Numérique In The Alps</title>
+        <meta
+            name="description"
+            content="Bienvenue sur le site du Campus Numérique In The Alps d'Annecy. Société coopérative d’intérêt collectif, liée à une réalité économique, dans une zone géographique. Nous formations des talents numériques."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="/logo.jpeg" type="image/x-icon" />
+        <link rel="stylesheet" href="./style.css" />
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
             integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
@@ -19,141 +23,173 @@
         ></script>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="#">Home </a></li>
-                <li><a href="about.html">Témoignage d'étudiants</a></li>
-                <li><a href="#">Devenir étudiant</a></li>
-                <li><a href="./etudiants.html">Nos étudiants</a></li>
-            </ul>
-        </nav>
-
-        <div class="hero">
-            <div class="hero-content">
-                <div class="hero-title">
-                    <h1>
-                        <strong>Campus Numérique</strong><br />
-                        In The Alps
-                    </h1>
-                    <h2>Nous formons des talents</h2>
+        <header class="header">
+            <nav aria-label="barre de navigation principale">
+                <ul>
+                    <li>
+                        <a
+                            href="./index.html"
+                            class="nav__link nav__link--active"
+                            >Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="./pages/temoignages-d-etudiants.html"
+                            class="nav__link"
+                            >Témoignage d'étudiants</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./pages/devenir-etudiant.html"
+                            class="nav__link"
+                            >Devenir étudiant</a
+                        >
+                    </li>
+                    <li class="dropdown">
+                        <a
+                            class="nav__link droplink"
+                            href="./pages/etudiants.html"
+                            >Nos étudiants 🔻</a
+                        >
+                        <ul class="dropdown-content">
+                            <li><a href="./pages/zak.html">Zakaria</a></li>
+                            <li><a href="./pages/emilie.html">Emilie</a></li>
+                            <li><a href="./pages/romain.html">Romain</a></li>
+                            <li>
+                                <a href="./pages/michelle.html">Michelle</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./pages/blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="./pages/about.html" class="nav__link"
+                            >A propos</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <img src="./logo.jpeg" alt="logo campus du numérique" />
+        </header>
+        <main class="container container__home">
+            <h1 class="container__main-title">Accueil</h1>
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-title">
+                        <h1>
+                            <strong>Campus Numérique</strong><br />
+                            In The Alps
+                        </h1>
+                        <h2>Nous formons des talents</h2>
+                    </div>
+                    <div class="hero-subtitle">
+                        <p>
+                            Société coopérative d’intérêt collectif, liée à une
+                            réalité économique, dans une zone géographique.
+                        </p>
+                        <button>Devenir étudiant</button>
+                    </div>
                 </div>
-                <div class="hero-subtitle">
-                    <p>
-                        Société coopérative d’intérêt collectif, liée à une
-                        réalité économique, dans une zone géographique.
-                    </p>
-                    <button>Devenir étudiant</button>
-                </div>
-            </div>
-            <div class="hero-illustration">
-                <svg
-                    class="rectangle geometry"
-                    width="148"
-                    height="148"
-                    viewBox="0 -4 148 154"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <rect
+                <div class="hero-illustration">
+                    <svg
+                        class="rectangle geometry"
                         width="148"
                         height="148"
-                        rx="40"
-                        stroke="#8A7B7B"
-                        stroke-width="3"
-                    />
-                </svg>
+                        viewBox="0 -4 148 154"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <rect
+                            width="148"
+                            height="148"
+                            rx="40"
+                            stroke="#8A7B7B"
+                            stroke-width="3"
+                        />
+                    </svg>
 
-                <svg
-                    class="triangle geometry"
-                    width="135"
-                    height="122"
-                    viewBox="0 -4 135 130"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path stroke="#8A7B7B" stroke-width="3" d="M51.8018
-                    9.00001C58.73 -2.99999 76.0505 -3.00001 82.9788
-                    8.99999L132.342 94.5C139.27 106.5 130.61 121.5 116.754
-                    121.5H18.0269C4.17047 121.5 -4.48981 106.5 2.43839
-                    94.5L51.8018 9.00001Z""/>
-                </svg>
+                    <svg
+                        class="triangle geometry"
+                        width="135"
+                        height="122"
+                        viewBox="0 -4 135 130"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path stroke="#8A7B7B" stroke-width="3" d="M51.8018
+                        9.00001C58.73 -2.99999 76.0505 -3.00001 82.9788
+                        8.99999L132.342 94.5C139.27 106.5 130.61 121.5 116.754
+                        121.5H18.0269C4.17047 121.5 -4.48981 106.5 2.43839
+                        94.5L51.8018 9.00001Z""/>
+                    </svg>
 
-                <svg
-                    class="ellipse geometry"
-                    width="132"
-                    height="132"
-                    viewBox="0 -4 132 139"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <circle
-                        cx="66"
-                        cy="66"
-                        r="66"
-                        stroke="#8A7B7B"
-                        stroke-width="3"
-                    />
-                </svg>
+                    <svg
+                        class="ellipse geometry"
+                        width="132"
+                        height="132"
+                        viewBox="0 -4 132 139"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <circle
+                            cx="66"
+                            cy="66"
+                            r="66"
+                            stroke="#8A7B7B"
+                            stroke-width="3"
+                        />
+                    </svg>
+                </div>
             </div>
-        </div>
+        </main>
+        <footer class="footer">
+            <nav aria-label="barre de navigation du pied de page">
+                <ul>
+                    <li>
+                        <a
+                            href="./index.html"
+                            class="nav__link nav__link--active"
+                            >Accueil</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./pages/mentions-legales.html"
+                            class="nav__link"
+                            >Mentions Légales</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./pages/nous-contacter.html" class="nav__link"
+                            >Nous contacter</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./pages/titre-rncp.html" class="nav__link"
+                            >Titre RNCP</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./pages/about.html" class="nav__link"
+                            >A propos</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </footer>
         <!--[if lt IE 7]>
             <p class="browsehappy">
                 You are using an <strong>outdated</strong> browser. Please
                 <a href="#">upgrade your browser</a> to improve your experience.
             </p>
         <![endif]-->
-
-        <script async defer>
-            function getRandomIntInclusive(min, max) {
-                min = Math.ceil(min);
-                max = Math.floor(max);
-                return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
-            }
-            function rotateRandom(target) {
-                anime.remove(target);
-                anime({
-                    targets: target,
-                    scale: 1.2,
-                    rotate: getRandomIntInclusive(-360, 360),
-                });
-            }
-
-            function initialState(target) {
-                anime.remove(target);
-                anime({
-                    targets: target,
-                    rotate: 0,
-                    scale: 1,
-                });
-            }
-            var geometries = document.querySelectorAll('.geometry');
-            geometries.forEach((element) => {
-                element.addEventListener('mouseenter', (event) => {
-                    rotateRandom(event.target);
-                });
-
-                element.addEventListener('mouseleave', (event) => {
-                    initialState(event.target);
-                });
-            });
-            anime
-                .timeline({
-                    easing: 'easeInOutSine',
-                    delay: function (el, i) {
-                        return i * 250;
-                    },
-                })
-                .add({
-                    duration: 1500,
-                    targets: '.triangle path, .rectangle rect, .ellipse circle',
-                    strokeDashoffset: [anime.setDashoffset, 0],
-                })
-                .add({
-                    targets: '.triangle path, .rectangle rect, .ellipse circle',
-                    strokeOpacity: 0,
-                    duration: 750,
-                    fill: '#E8649B',
-                });
-        </script>
+        <script src="./index.js" async defer></script>
+        <noscript
+            >Pour profiter d'une expérience optimale sur notre site, activez
+            Javascript dans votre navigateur</noscript
+        >
     </body>
 </html>

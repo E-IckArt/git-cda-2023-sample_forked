@@ -1,0 +1,46 @@
+.container__students {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.cdv__list {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e5eef5;
+    border-radius: 30px;
+    width: 50%;
+    align-self: center;
+    padding: 2rem;
+}
+
+.cdv__list--item {
+    list-style: none;
+    line-height: 3;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0 3rem;
+    width: 50%;
+    background-color: #ff79b4;
+    background: radial-gradient(
+        circle,
+        rgba(255, 121, 180, 1) 90%,
+        rgba(229, 238, 245, 1) 100%
+    );
+    border: 2px double #fff;
+    border-radius: 20px;
+}
+
+.cdv__list--item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cdv__list--subtitle {
+    list-style: none;
+    line-height: 2;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
