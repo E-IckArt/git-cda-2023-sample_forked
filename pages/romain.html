@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav>
                 <ul>
                     <li><a href="/index.html">Home </a></li>
@@ -29,14 +29,18 @@
                     <li>
                         <a href="/pages/devenir-etudiant.html">Devenir étudiant</a>
                     </li>
-                    <li>
-                        <a href="/pages/etudiants.html"
-                            >Nos étudiants</a
+                    <li class="dropdown">
+                        <a
+                            class="nav__link"
+                            href="/pages/etudiants.html"
+                            >Nos étudiants 🔻</a
                         >
-                        <ul>
+                        <ul class="dropdown-content">
                             <li><a href="/pages/zak.html">Zakaria</a></li>
-                            <li><a href="/pages/emilie.html">Emilie</a></li>
-                            <li><a href="/pages/romain.html" class="nav__link--active">Romain</a></li>
+                            <li>
+                                <a href="/pages/emilie.html">Emilie</a>
+                            </li>
+                            <li><a href="/pages/romain.html" class="nav__link nav__link--active">Romain</a></li>
                             <li><a href="/pages/michelle.html">Michelle</a></li>
                         </ul>
                     </li>

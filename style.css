@@ -1,4 +1,5 @@
 @import '/style/reset.css';
+@import '/style/dropdown-menu.css';
 @import '/style/testimonies.css';
 @import '/style/emilie.css';
 
@@ -6,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-
+    min-height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -52,12 +53,13 @@ button {
 }
 
 nav {
-    width: 100%;
+    width: 80%;
 }
 nav ul {
     width: 100%;
     list-style: none;
     display: flex;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
 
@@ -102,12 +104,55 @@ nav li a {
 * General
 *
 */
+
+/* Header */
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    background-color: #b70041;
+}
+
+.header a {
+    color: #fff;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.header img {
+    height: 8rem;
+    width: auto;
+    border-radius: 30px;
+}
+
+/* Navbar */
+
+.header .nav__link {
+    padding: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.header .nav__link:hover {
+    color: #1d1c1c;
+    background-color: #ffc7e4;
+}
+
+.header .nav__link.nav__link--active {
+    color: #fff;
+    background-color: #1d1c1c;
+    cursor: not-allowed;
+}
+
+/* Main container */
 .container {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     width: 80%;
-    margin: 2rem auto;
+    margin: 5rem auto 2rem;
 }
 
 .container__main-title {

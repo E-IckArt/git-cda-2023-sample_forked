@@ -18,7 +18,7 @@
     </head>
 
     <body>
-        <header>
+        <header class="header">
             <nav>
                 <ul>
                     <li><a href="/index.html">Home </a></li>
@@ -34,17 +34,23 @@
                             >Devenir étudiant</a
                         >
                     </li>
-                    <li>
-                        <a href="/pages/etudiants.html">Nos étudiants</a>
-                        <ul>
+                    <li class="dropdown">
+                        <a
+                            class="nav__link droplink"
+                            href="/pages/etudiants.html"
+                            >Nos étudiants 🔻</a
+                        >
+                        <ul class="dropdown-content">
                             <li>
                                 <a
                                     href="/pages/zak.html"
-                                    class="nav__link--active"
-                                    >Zakaria
-                                </a>
+                                    class="nav__link nav__link--active"
+                                    >Zakaria</a
+                                >
                             </li>
-                            <li><a href="/pages/emilie.html">Emilie</a></li>
+                            <li>
+                                <a href="/pages/emilie.html">Emilie</a>
+                            </li>
                             <li><a href="/pages/romain.html">Romain</a></li>
                             <li><a href="/pages/michelle.html">Michelle</a></li>
                         </ul>
@@ -52,7 +58,7 @@
                     <li><a href="/pages/about.html">A propos</a></li>
                 </ul>
             </nav>
-            <img src="/logo.jpeg" width="250" alt="logo campus du numérique" />
+            <img src="/logo.jpeg" alt="logo campus du numérique" />
         </header>
 
         <!--[if lt IE 7]>
