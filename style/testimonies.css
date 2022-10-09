@@ -1,0 +1,31 @@
+/*
+*
+* Testimonies page 
+*
+*/
+
+.testimony__card {
+    width: 80%;
+    margin: 2.2rem auto 3rem;
+    padding: 1rem 2rem;
+    border: 3px solid #b70041;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #e6b3cd, #ffd5f4);
+    box-shadow: 20px 20px 40px #d9a9c2, -20px -20px 40px #ffe5ff;
+}
+
+.testimony__card--title--text-align {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+}
+
+.testimony__card--body {
+    margin: 2.5rem auto;
+}
+
+.testimony__author {
+    text-align: end;
+    margin-top: 0.8rem;
+}
