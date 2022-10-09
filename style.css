@@ -1,7 +1,8 @@
 @import 'style/reset.css';
 @import 'style/dropdown-menu.css';
 @import 'style/testimonies.css';
-@import 'style/emilie.css';
+@import 'style/etudiants.css';
+@import 'style/etudiants.css';
 
 body {
     display: flex;
