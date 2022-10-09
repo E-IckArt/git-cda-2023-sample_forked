@@ -10,7 +10,7 @@
         <title>Site web simple</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="/style.css" />
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
             integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
@@ -21,17 +21,34 @@
     <body>
         <nav>
             <ul>
-                <li><a href="index.html">Home </a></li>
+                <li><a href="/index.html">Home </a></li>
                 <li>
-                    <a href="temoignages-d-etudiants.html"
+                    <a href="/pages/temoignages-d-etudiants.html"
                         >Témoignage d'étudiants</a
                     >
                 </li>
-                <li><a href="#">Devenir étudiant</a></li>
-                <li><a href="./etudiants.html">Nos étudiants</a></li>
-                <li><a href="about.html">A propos</a></li>
+                <li>
+                    <a href="/pages/devenir-etudiant.html">Devenir étudiant</a>
+                </li>
+                <li>
+                    <a href="/pages/etudiants.html">Nos étudiants</a>
+                    <ul>
+                        <li><a href="/pages/zak.html">Zakaria</a></li>
+                        <li><a href="/pages/emilie.html">Emilie</a></li>
+                        <li><a href="/pages/romain.html">Romain</a></li>
+                        <li>
+                            <a
+                                href="/pages/michelle.html"
+                                class="nav__link--active"
+                                >Michelle
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/pages/about.html">A propos</a></li>
             </ul>
         </nav>
+        <img src="/logo.jpeg" width="250" />
         <h1>Michelle Alabi</h1>
 
         <p>I'm a passionate web developer</p>
