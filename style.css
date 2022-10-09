@@ -18,6 +18,7 @@ body > div {
 
 .hero {
     width: 60%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -106,7 +107,8 @@ nav li a {
 */
 
 /* Header */
-.header {
+.header,
+.footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -115,7 +117,8 @@ nav li a {
     background-color: #b70041;
 }
 
-.header a {
+.header a,
+.footer a {
     color: #fff;
     font-weight: 700;
     font-size: larger;
@@ -127,20 +130,23 @@ nav li a {
     border-radius: 30px;
 }
 
-/* Navbar */
+/* Navbar Header and footer */
 
-.header .nav__link {
+.header .nav__link,
+.footer .nav__link {
     padding: 1rem;
     border-radius: 20px;
     cursor: pointer;
 }
 
-.header .nav__link:hover {
+.header .nav__link:hover,
+.footer .nav__link:hover {
     color: #1d1c1c;
     background-color: #ffc7e4;
 }
 
-.header .nav__link.nav__link--active {
+.header .nav__link.nav__link--active,
+.footer .nav__link.nav__link--active {
     color: #fff;
     background-color: #1d1c1c;
     cursor: not-allowed;
