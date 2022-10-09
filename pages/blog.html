@@ -7,73 +7,78 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>A propos du Campus</title>
+        <title>Blog</title>
         <meta
             name="description"
-            content="Etre étudiant au Campus Numérique In The Alps..."
+            content="Bienvenue sur le blog du Campus Numérique In The Alps d'Annecy. Ici vous trouvez nos dernière actualités."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href="../logo.jpeg" type="image/x-icon" />
         <link rel="stylesheet" href="../style.css" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+            integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
     </head>
     <body>
         <header class="header">
             <nav aria-label="barre de navigation principale">
                 <ul>
-                    <li><a href="../index.html">Accueil</a></li>
                     <li>
-                        <a href="./temoignages-d-etudiants.html"
+                        <a href="../index.html" class="nav__link">Accueil </a>
+                    </li>
+                    <li>
+                        <a
+                            href="./temoignages-d-etudiants.html"
+                            class="nav__link"
                             >Témoignage d'étudiants</a
                         >
                     </li>
                     <li>
-                        <a href="./devenir-etudiant.html">Devenir étudiant</a>
+                        <a href="./devenir-etudiant.html" class="nav__link"
+                            >Devenir étudiant</a
+                        >
                     </li>
                     <li class="dropdown">
-                        <a
-                            class="nav__link nav__link--active droplink"
-                            href="./etudiants.html"
+                        <a class="nav__link droplink" href="./etudiants.html"
                             >Nos étudiants 🔻</a
                         >
                         <ul class="dropdown-content">
                             <li><a href="./zak.html">Zakaria</a></li>
                             <li><a href="./emilie.html">Emilie</a></li>
                             <li><a href="./romain.html">Romain</a></li>
-                            <li><a href="./michelle.html">Michelle</a></li>
+                            <li>
+                                <a href="./michelle.html">Michelle</a>
+                            </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="./blog.html" class="nav__link">Blog</a>
+                        <a
+                            href="./blog.html"
+                            class="nav__link nav__link--active"
+                            >Blog</a
+                        >
                     </li>
-                    <li><a href="./about.html">A propos</a></li>
+                    <li>
+                        <a href="./about.html" class="nav__link">A propos</a>
+                    </li>
                 </ul>
             </nav>
             <img src="../logo.jpeg" alt="logo campus du numérique" />
         </header>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">
-                You are using an <strong>outdated</strong> browser. Please
-                <a href="#">upgrade your browser</a> to improve your experience.
-            </p>
-        <![endif]-->
-        <main class="container container__students">
-            <h1 class="container__main-title">
-                Cartes de visite de nos étudiants
-            </h1>
-
-            <!-- Text à ajouter -->
-            <li><a href="./zak.html">Carte de visite de Zakaria AADDI</a></li>
-            <li>
-                <a href="./emilie.html"
-                    >Carte de visite d'Emilie INACK-AUDIBERT</a
-                >
-            </li>
-            <li>
-                <a href="./romain.html">Carte de visite de Romain Candusso</a>
-            </li>
-            <li>
-                <a href="./michelle.html">Carte de visite de Michelle ALABI</a>
-            </li>
+        <main class="container container__home">
+            <h1 class="container__main-title">Blog</h1>
+            <h2>
+                Bienvenue sur le blog du Campus Numérique In The Alps d'Annecy
+            </h2>
+            <p>Ici vous trouvez bientôt nos dernière actualités.</p>
+            <img
+                src="../logo.jpeg"
+                style="height: auto; width: 400px"
+                alt="logo campus du numérique"
+            />
         </main>
         <footer class="footer">
             <nav aria-label="barre de navigation du pied de page">
@@ -102,7 +107,13 @@
                 </ul>
             </nav>
         </footer>
-        <script src=""></script>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="#">upgrade your browser</a> to improve your experience.
+            </p>
+        <![endif]-->
+        <script src="" async defer></script>
         <noscript
             >Pour profiter d'une expérience optimale sur notre site, activez
             Javascript dans votre navigateur</noscript
