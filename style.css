@@ -10,6 +10,8 @@ body {
     min-height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 253, 253);
+    position: relative;
 }
 
 body > div {
@@ -60,6 +62,7 @@ nav ul {
     width: 100%;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
 }
@@ -100,13 +103,17 @@ nav li a {
 
 /* ---------------------------- MY CSS ---------------------------------- */
 
-/*
-*
-* General
-*
-*/
+/***** General *****/
 
 /* Header */
+.header img {
+    height: 8rem;
+    width: auto;
+    border-radius: 30px;
+}
+
+/* Header & Footer */
+
 .header,
 .footer {
     display: flex;
@@ -122,12 +129,6 @@ nav li a {
     color: #fff;
     font-weight: 700;
     font-size: larger;
-}
-
-.header img {
-    height: 8rem;
-    width: auto;
-    border-radius: 30px;
 }
 
 /* Navbar Header and footer */
@@ -153,6 +154,7 @@ nav li a {
 }
 
 /* Main container */
+
 .container {
     display: flex;
     flex-flow: column wrap;
@@ -164,4 +166,15 @@ nav li a {
 .container__main-title {
     color: #b70041;
     font-weight: 800;
+}
+
+/* Footer */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.3rem;
+    font-size: smaller;
 }
