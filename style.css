@@ -1,7 +1,7 @@
-@import '/style/reset.css';
-@import '/style/dropdown-menu.css';
-@import '/style/testimonies.css';
-@import '/style/emilie.css';
+@import 'style/reset.css';
+@import 'style/dropdown-menu.css';
+@import 'style/testimonies.css';
+@import 'style/emilie.css';
 
 body {
     display: flex;
@@ -121,6 +121,7 @@ nav li a {
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
+    margin-bottom: 0;
     background-color: #b70041;
 }
 
